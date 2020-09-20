@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input[name='state']").change(function(){
+        var checkedStates = $("input[name='state']:checked");
+        var states = [];
+        for(var i = 0; i<checkedStates.length; i++) {
+            states.push("{{Vol_Prospect_Prefix}}_" + checkedStates[i].value + ";");
+        }
+        $("[name='CustomFormFieldQuestion_5535888968927247_MappedParagraphQuestion_4683628191741929']").val(states.join(" "));
+
+    });
+
+
+});
+</script>
+
+<script>
+var myPostRender = function(args) {
+  (function ($) {
+
+    $(".content.ngp-content section.custom-theme-fields").prependTo(".at.ngp-form .at-fieldset.AdditionalInformation"); // Move the custom checkboxes into the form
+
+  }(jQuery));
+  return args;
+};
+
+var nvtag_callbacks = nvtag_callbacks || {};
+nvtag_callbacks.postRender = nvtag_callbacks.postRender || [];
+nvtag_callbacks.postRender.push(myPostRender);
+</script>
+
+
+<style>
+  .at .custom-theme-fields input[type="checkbox"] {
+    left:0;
+    position:relative;
+  }
+  
+  .at .at-row.CustomFormFieldQuestion_5535888968927247_MappedParagraphQuestion_4683628191741929 {display:none;}
+</style>
