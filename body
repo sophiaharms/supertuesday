@@ -1,0 +1,22 @@
+<body>
+    
+{{EmbedForm}}
+
+<section class="custom-theme-fields">
+<input type="checkbox" name="state" value="AL"> Alabama<br>
+<input type="checkbox" name="state" value="AR"> Arkansas<br>
+<input type="checkbox" name="state" value="CA"> California<br>
+<input type="checkbox" name="state" value="CO"> Colorado<br>
+<input type="checkbox" name="state" value="ME"> Maine<br>
+<input type="checkbox" name="state" value="MA"> Massachusetts<br>
+<input type="checkbox" name="state" value="MN"> Minnesota<br>
+<input type="checkbox" name="state" value="NC"> North Carolina<br>
+<input type="checkbox" name="state" value="OK"> Oklahoma<br>
+<input type="checkbox" name="state" value="TN"> Tennessee<br>
+<input type="checkbox" name="state" value="TX"> Texas<br>
+<input type="checkbox" name="state" value="VA"> Virginia<br>
+<input type="checkbox" name="state" value="VT"> Vermont<br>
+</section>
+
+</body>
+</html>
